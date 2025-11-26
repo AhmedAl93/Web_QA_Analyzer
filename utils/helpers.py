@@ -1,4 +1,4 @@
-from playwright.sync_api import sync_playwright  # Changed from async_playwright
+from playwright.sync_api import sync_playwright 
 from bs4 import BeautifulSoup
 import time
 import requests
@@ -19,7 +19,7 @@ def fetch_page_html_and_screenshot(url: str, log_callback=print):
             
             browser = p.chromium.launch(
                 headless=True,
-                args=["--no-sandbox", "--disable-dev-shm-usage"] 
+                args=["--no-sandbox"] 
             )
 
             context = browser.new_context(
@@ -37,18 +37,15 @@ def fetch_page_html_and_screenshot(url: str, log_callback=print):
 
             log_callback(f"Navigating to {url}...")
             
-            # wait_until="domcontentloaded" is 5x faster than "networkidle"
             page.goto(url, wait_until="domcontentloaded", timeout=15000)
 
-            # Short static sleep to allow animations/lazy-loading to settle
             time.sleep(2) 
 
             title = page.title()
             log_callback(f"Page loaded: {title}")
 
             log_callback("Capturing screenshot...")
-            screenshot = page.screenshot(full_page=False) # full_page=False is faster and often enough for QA
-
+            screenshot = page.screenshot(full_page=False)
             log_callback("Extracting HTML...")
             html = page.content()
 
@@ -62,7 +59,7 @@ def fetch_page_html_and_screenshot(url: str, log_callback=print):
             return html, screenshot, extracted_text, console_logs
 
     except Exception as e:
-        log_callback(f"❌ Error: {str(e)}")
+        log_callback(f"Error: {str(e)}")
         # Return Nones so the app handles it gracefully
         return None, None, None, None
     
@@ -120,5 +117,5 @@ def fetch_page_html(url: str, log_callback=print):
         return html, screenshot_bytes, extracted_text
 
     except Exception as e:
-        log_callback(f"❌ Error during fetch: {str(e)}")
+        log_callback(f"Error during fetch: {str(e)}")
         return None, None, None
