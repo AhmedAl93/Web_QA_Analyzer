@@ -6,10 +6,7 @@ It combines:
 - Static HTML/text analysis
 - Screenshot-based visual & UX evaluation
 - Full browsing agent capabilities (via [browser-use](https://github.com/browser-use/browser-use))
-- Gemini model multimodal LLM for intelligent feedback (model name to be specified in config.json)
-
-Live demo (if deployed): https://your-app-url.streamlit.app  
-GitHub repository: https://github.com/yourusername/webpage-qa-analyzer
+- Gemini multimodal LLM for intelligent feedback (model name to be specified in config.json)
 
 
 ### Features
