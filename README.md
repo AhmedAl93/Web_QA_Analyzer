@@ -16,10 +16,10 @@ GitHub repository: https://github.com/yourusername/webpage-qa-analyzer
 
 | Tab             | Analysis Type                  | Method                              | Key Checks |
 |-----------------|--------------------------------|-------------------------------------|-------------------------------------|
-| **SEO**         | On-page SEO                    | HTML parsing → LLM               | Meta tags, headings, alt texts, structured data |
-| **Visual/UX**   | Design & usability             | Screenshot + HTML → Multimodal LLM  | Layout issues, contrast, hierarchy, mobile view |
-| **Content**     | Text quality & trustworthiness | Extracted text → LLM             | Readability, tone, spam signals, UX writing |
-| **QA by Agent** | End-to-end QA analysis    | Real browser + browsing agent       | Navigation flow, JS errors, accessibility, performance |
+| **SEO**         | On-page SEO                    | url → HTML parsing → LLM               | Meta tags, headings, alt texts, structured data |
+| **Visual/UX**   | Design & usability             | url → Screenshot + HTML → Multimodal LLM  | Layout issues, contrast, hierarchy, mobile view |
+| **Content**     | Text quality & trustworthiness | url → Extracted text → LLM             | Readability, tone, spam signals, UX writing |
+| **QA by Agent** | End-to-end QA analysis    | url → browsing agent       | Navigation flow, JS errors, accessibility, performance |
 
 The web app includes real-time logs, screenshot preview, and progress feedback.
 
@@ -30,7 +30,7 @@ The web app includes real-time logs, screenshot preview, and progress feedback.
 - **Frontend/Backend**: Streamlit
 - **Package manager**: [uv](https://docs.astral.sh/uv/)
 - **LLM**: Currently gemini-2.5-flash, other models available [here](https://ai.google.dev/gemini-api/docs/models)
-- **Browsing Agent**: [browser-use](https://github.com/browser-use/browser-use) + Playwright
+- **Browsing Agent**: [browser-use](https://github.com/browser-use/browser-use)
 - **HTML & Text**: requests + BeautifulSoup
 - **Screenshots**: requests + https://image.thum.io/get/fullpage/
 
