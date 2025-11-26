@@ -1,0 +1,18 @@
+[project]
+name = "qa-web-app-streamlit"
+version = "0.1.0"
+requires-python = "==3.11.13"
+dependencies = [
+    "beautifulsoup4>=4.14.2",
+    "browser-use==0.9.7",
+    "google-genai>=1.52.0",
+    "playwright>=1.56.0",
+    "playwright-stealth==2.0.0",
+    "streamlit==1.51.0",
+    "strictjson>=6.3.0",
+]
+
+[dependency-groups]
+explore = [
+    "ipykernel==7.1.0",
+]
