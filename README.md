@@ -18,7 +18,7 @@ It combines:
 | **Content**     | Text quality & trustworthiness | url → Extracted text → LLM             | Readability, tone, spam signals, UX writing |
 | **QA by Agent** | End-to-end QA analysis    | url → browsing agent       | Navigation flow, JS errors, accessibility, performance |
 
-The web app includes real-time logs, screenshot preview, and progress feedback.
+The web app includes real-time logs, screenshot preview, and multiple analysis tabs.
 
 ---
 
