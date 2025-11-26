@@ -14,7 +14,7 @@ It combines:
 | Tab             | Analysis Type                  | Method                              | Key Checks |
 |-----------------|--------------------------------|-------------------------------------|-------------------------------------|
 | **SEO**         | On-page SEO                    | url → HTML parsing → LLM               | Meta tags, headings, alt texts, structured data |
-| **Visual/UX**   | Design & usability             | url → Screenshot + HTML → Multimodal LLM  | Layout issues, contrast, hierarchy, mobile view |
+| **Visual/UX**   | Design & usability             | url → Screenshot + HTML → Multimodal LLM  | Layout issues, contrast, hierarchy |
 | **Content**     | Text quality & trustworthiness | url → Extracted text → LLM             | Readability, tone, UX writing |
 | **QA by Agent** | End-to-end QA analysis    | url → browsing agent       | Navigation flow, JS errors, accessibility, performance |
 
