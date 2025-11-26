@@ -14,12 +14,9 @@ def fetch_page_html_and_screenshot(url: str, log_callback=print):
     console_logs = []
 
     try:
-        # Use sync_playwright() context manager
         with sync_playwright() as p:
             log_callback("Launching browser...")
             
-            # headless=True is faster. 
-            # Added --disable-dev-shm-usage to prevent crashes in Docker/Render/Streamlit Cloud
             browser = p.chromium.launch(
                 headless=True,
                 args=["--no-sandbox", "--disable-dev-shm-usage"] 
