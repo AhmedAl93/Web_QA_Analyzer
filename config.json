@@ -1,0 +1,12 @@
+{
+    "llm_client": {
+        "retry_attempts": 5,
+        "max_delay": 5
+  },
+
+    "llm": {
+        "model_name": "gemini-2.5-flash",
+        "temperature": 0.1,
+        "seed": 1
+  }
+}
