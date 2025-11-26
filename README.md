@@ -43,7 +43,7 @@ The web app includes real-time logs, screenshot preview, and progress feedback.
 git clone https://github.com/yourusername/webpage-qa-analyzer.git
 cd webpage-qa-analyzer
 
-# 2. Install dependencies with uv (recommended & fastest)
+# 2. Install dependencies with uv
 uv sync
 
 # 3. Provide environment variables and add necessary API keys
