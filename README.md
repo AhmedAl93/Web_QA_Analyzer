@@ -37,7 +37,7 @@ The web app includes real-time logs, screenshot preview, and multiple analysis t
 
 ```bash
 # 1. Clone the repo
-git clone https://github.com/yourusername/webpage-qa-analyzer.git
+git clone https://github.com/AhmedAl93/Web_QA_Analyzer/tree/master
 cd webpage-qa-analyzer
 
 # 2. Install dependencies with uv
