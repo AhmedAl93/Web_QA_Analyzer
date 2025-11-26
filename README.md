@@ -10,6 +10,7 @@ It combines:
 
 
 ### Features
+The web app includes real-time logs, screenshot preview, and multiple analysis tabs.
 
 | Tab             | Analysis Type                  | Method                              | Key Checks |
 |-----------------|--------------------------------|-------------------------------------|-------------------------------------|
@@ -17,8 +18,6 @@ It combines:
 | **Visual/UX**   | Design & usability             | url → Screenshot + HTML → Multimodal LLM  | Layout issues, contrast, hierarchy |
 | **Content**     | Text quality & trustworthiness | url → Extracted text → LLM             | Readability, tone, UX writing |
 | **QA by Agent** | End-to-end QA analysis    | url → browsing agent       | Navigation flow, JS errors, accessibility, performance |
-
-The web app includes real-time logs, screenshot preview, and multiple analysis tabs.
 
 ---
 
